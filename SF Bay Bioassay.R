@@ -769,7 +769,7 @@ packageVersion("tidyverse")
 
 SFBio.taxa <- read.csv("C:/Users/hira7/OneDrive/Desktop/SFBioTax.csv")
 SFBioDB.abund <- read.csv("C:/Users/hira7/OneDrive/Desktop/DBbioabund.csv")
-SFBioMetaDB <- read.csv("C:/Users/hira7/OneDrive/Desktop/DBbiometa.csv")
+SFBioMetaDB <- read.csv("C:/Users/hira7/OneDrive/Desktop/DB_Bioassay_Metadata.csv")
 
 SFBioDB.abund <- SFBioDB.abund %>% 
   tibble::column_to_rownames("ASV")
@@ -907,7 +907,7 @@ ggsave("SFBay_DB1_Bioassay2023_Top100_Cyano_Genus.png", width = 12, height = 14,
 
 SFBio.taxa <- read.csv("C:/Users/hira7/OneDrive/Desktop/SFBioTax.csv")
 SFBioST.abund <- read.csv("C:/Users/hira7/OneDrive/Desktop/STbioAbund.csv")
-SFBioMetaST <- read.csv("C:/Users/hira7/OneDrive/Desktop/STbiometa.csv")
+SFBioMetaST <- read.csv("C:/Users/hira7/OneDrive/Desktop/ST_Bioassay_Metadata.csv")
 
 SFBioST.abund <- SFBioST.abund %>%
   tibble::column_to_rownames("ASV")
